@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Layout de Colunas com Float</title>
+        <style>
+            body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+            }
+
+            .container {
+    width: 100%;
+    overflow: hidden; /* Para limpar floats */
+            }
+
+            .left-column {
+    float: left;
+    width: 30%;
+    background-color: #e0f7fa; /* Cor de fundo para visualização */
+    padding: 20px;
+    box-sizing: border-box;
+            }
+
+            .right-column {
+    float: left;
+    width: 70%;
+    background-color: #f1f8e9; /* Cor de fundo para visualização */
+    padding: 20px;
+    box-sizing: border-box;
+            }
+
+            h2 {
+    margin-top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="left-column">
+                <h2>Coluna da Esquerda</h2>
+                <p>Conteúdo da coluna da esquerda. Esta coluna ocupa 30% da largura total do contêiner.</p>
+            </div>
+            <div class="right-column">
+                <h2>Coluna da Direita</h2>
+                <p>Conteúdo da coluna da direita. Esta coluna ocupa 70% da largura total do contêiner.</p>
+            </div>
+        </div>
+    </body>
+</html>

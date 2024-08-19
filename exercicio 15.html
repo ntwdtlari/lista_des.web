@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Tabela Estilo Zebra</title>
+        <style>
+            body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+            }
+
+            .zebra-table {
+    width: 60%;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            }
+
+            .zebra-table th, .zebra-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+            }
+
+            .zebra-table tr:nth-child(odd) {
+    background-color: #f2f2f2;
+            }
+        </style>
+    </head>
+    <body>
+        <table class="zebra-table">
+            <thead>
+                <tr>
+                    <th>Coluna 1</th>
+                    <th>Coluna 2</th>
+                    <th>Coluna 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Linha 1</td>
+                    <td>Item 1</td>
+                    <td>Item 1</td>
+                </tr>
+                <tr>
+                    <td>Linha 2</td>
+                    <td>Item 2</td>
+                    <td>Item 2</td>
+                </tr>
+                <tr>
+                    <td>Linha 3</td>
+                    <td>Item 3</td>
+                    <td>Item 3</td>
+                </tr>
+                <tr>
+                    <td>Linha 4</td>
+                    <td>Item 4</td>
+                    <td>Item 4</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Menu Vertical</title>
+        <style>
+            body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+            }
+
+            .vertical-menu {
+    width: 200px;
+            }
+
+            .vertical-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+            }
+
+            .vertical-menu li {
+    margin-bottom: 10px;
+            }
+
+            .vertical-menu a {
+    display: block;
+    padding: 15px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+            }
+
+            .vertical-menu a:hover {
+    background-color: #2ecc71;
+            }
+
+            .vertical-menu li:nth-child(2) a:hover {
+    background-color: #e74c3c;
+            }
+
+            .vertical-menu li:nth-child(3) a:hover {
+    background-color: #f39c12;
+            }
+
+            .vertical-menu li:nth-child(4) a:hover {
+    background-color: #8e44ad;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="vertical-menu">
+            <ul>
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+                <li><a href="#">Item 4</a></li>
+            </ul>
+        </nav>
+    </body>
+</html>
